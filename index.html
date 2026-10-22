@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Fikih VIII · Pertemuan 1 · Ketentuan Puasa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--g:#2fb344;--gd:#0a3d1c;--k:#000;--mut:#5a6660;--ln:#e4e9e6;--ez:cubic-bezier(.22,1,.36,1);--sp:cubic-bezier(.34,1.56,.64,1)}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;background:#fff;color:var(--k);font:400 clamp(15px,1.5vw,19px)/1.55 Inter,system-ui,sans-serif}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+.bg i{position:fixed;z-index:0;transition:transform 1.4s var(--ez)}
+.d1{right:-120px;top:-120px;width:300px;height:300px;background:var(--g);border-radius:64px;transform:rotate(calc(45deg + var(--r,0deg)))}
+.d2{left:-90px;bottom:-90px;width:200px;height:200px;background:var(--k);border-radius:48px;transform:rotate(calc(30deg - var(--r,0deg)))}
+.d3{left:6%;top:-60px;width:120px;height:120px;border:14px solid var(--g);border-radius:50%;opacity:.25;transform:translateY(calc(var(--r,0deg)*1.2))}
+header{position:fixed;z-index:5;top:max(14px,env(safe-area-inset-top));left:clamp(18px,4vw,56px);font-weight:600;font-size:.8em;display:flex;gap:10px;align-items:center}
+header b{width:26px;height:26px;border-radius:8px;background:var(--g);display:grid;place-items:center;color:#fff;font-size:13px}
+.s{position:absolute;inset:0;z-index:2;padding:clamp(64px,9vh,90px) clamp(20px,7vw,110px) 96px;display:flex;flex-direction:column;justify-content:center;gap:clamp(12px,2vh,22px);overflow-y:auto;opacity:0;visibility:hidden;transform:translateX(7%) scale(.95);filter:blur(14px);transition:opacity .7s var(--ez),transform .9s var(--ez),filter .7s var(--ez),visibility 0s .8s}
+.s.p{transform:translateX(-7%) scale(1.04)}
+.s.on{opacity:1;visibility:visible;transform:none;filter:none;transition:opacity .7s var(--ez),transform .9s var(--ez),filter .7s var(--ez),visibility 0s}
+.s.out{visibility:visible}
+.a{opacity:0;transform:translateY(34px) scale(.96);filter:blur(10px)}
+.on .a,.out .a{animation:in 1s var(--ez) both;animation-delay:calc(var(--i)*85ms + 220ms)}
+.out .a{animation:none;opacity:1;transform:none;filter:none}
+@keyframes in{to{opacity:1;transform:none;filter:none}}
+h1{font-size:clamp(34px,7.5vw,92px);line-height:1;font-weight:800;letter-spacing:-.04em}
+h2{font-size:clamp(26px,4.6vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.035em;position:relative;padding-bottom:14px}
+h2::after{content:"";position:absolute;left:0;bottom:0;height:5px;width:0;background:var(--g);border-radius:3px}
+.on h2::after{animation:ul 1.1s .6s var(--ez) forwards}@keyframes ul{to{width:72px}}
+h3{font-size:1.15em;font-weight:800;letter-spacing:-.01em}
+.g{color:var(--g)}.m{color:var(--mut)}.sm{font-size:.85em}
+.grid{display:grid;gap:clamp(10px,1.6vw,18px);grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.c{border:1px solid var(--ln);border-radius:22px;padding:clamp(14px,2vw,24px);background:#fff;transition:translate .5s var(--sp),scale .5s var(--sp),box-shadow .4s,border-color .3s}
+.c:hover{translate:0 -8px;scale:1.025;border-color:var(--g);box-shadow:0 22px 44px -18px rgba(0,0,0,.35)}
+.c.gr{background:var(--g);border-color:var(--g);color:#fff}.c.bk{background:#000;border-color:#000;color:#fff}.c.bk .m,.c.gr .m{color:#ffffffb0}
+.pill{display:inline-block;padding:5px 13px;border-radius:99px;background:#eaf7ed;color:var(--gd);font-weight:600;font-size:.82em;margin:0 6px 6px 0}
+.big{font-size:clamp(30px,6vw,72px);font-weight:800;color:var(--g);letter-spacing:-.04em;line-height:1}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:99px;background:var(--g);color:#fff;font-weight:600;transition:translate .4s var(--sp),scale .4s var(--sp),box-shadow .3s}
+.btn:hover{scale:1.08;translate:0 -3px;box-shadow:0 14px 28px -10px rgba(47,179,68,.7)}.btn:active{scale:.94}.btn.k{background:#000}.btn.o{background:#fff;color:#000;border:1.5px solid #000}
+.ar{font-family:Amiri,'Scheherazade New','Noto Naskh Arabic',serif;direction:rtl;font-size:clamp(25px,4.8vw,50px);line-height:2.1;display:flex;flex-wrap:wrap;gap:0 .5em;justify-content:center;text-align:center}
+.w{font:inherit;padding:0 .18em;border-radius:12px;border-bottom:3px dotted var(--g);transition:background .3s,translate .4s var(--sp),scale .4s var(--sp),color .3s}
+.w:hover,.w:focus-visible{background:var(--g);color:#fff;translate:0 -6px;scale:1.15;outline:0}
+.ayat{border-radius:28px;background:#f4faf5;padding:clamp(14px,3vw,34px);border:1px solid #d6ecdb}
+.ck li{list-style:none;display:flex;gap:14px;align-items:center;padding:14px 18px;border:1px solid var(--ln);border-radius:18px;margin-bottom:10px;cursor:pointer;transition:all .4s var(--ez);background:#fff}
+.ck li i{flex:none;width:28px;height:28px;border-radius:50%;border:2px solid #000;display:grid;place-items:center;transition:all .4s var(--sp);font-style:normal;color:transparent}
+.ck li.d{background:var(--g);color:#fff;border-color:var(--g);transform:translateX(8px)}.ck li.d i{background:#fff;border-color:#fff;color:var(--g);transform:scale(1.15) rotate(360deg)}
+.opt{padding:8px 14px;border-radius:99px;border:1.5px solid #000;font-size:.82em;font-weight:600;margin:4px 6px 0 0;transition:all .3s var(--sp)}
+.opt:hover{transform:scale(1.07)}.opt.on1{background:#000;color:#fff}.ok{background:var(--g)!important;border-color:var(--g)!important;color:#fff!important}.no{background:#000!important;color:#fff!important;animation:sh .45s}
+@keyframes sh{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+.fb{max-height:0;overflow:hidden;opacity:0;transition:all .5s var(--ez);font-size:.88em;color:var(--mut)}.fb.sh{max-height:90px;opacity:1;margin-top:8px}
+.tm{position:relative;width:min(56vw,230px);aspect-ratio:1;margin:auto}
+.tm svg{width:100%;height:100%;transform:rotate(-90deg)}.tm b{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(28px,6vw,48px);font-weight:800;font-variant-numeric:tabular-nums}
+.star{font-size:clamp(34px,8vw,52px);color:#d5dcd8;transition:all .4s var(--sp)}.star.on1{color:var(--g);transform:scale(1.2) rotate(-12deg)}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(16px,3vw,40px);align-items:center}
+/* hover untuk semua teks dan elemen (memakai properti translate/scale/rotate agar tidak bentrok dengan animasi masuk) */
+.s :is(h1,h2,h3,p,li,.big,.pill,b,i,.m){transition:translate .45s var(--sp),scale .45s var(--sp),rotate .45s var(--sp),background .3s,color .3s,text-shadow .3s;transform-origin:left center}
+.s :is(h1,h2,h3,p,li,.big):hover{translate:10px 0;scale:1.035;text-shadow:0 0 22px rgba(47,179,68,.45)}
+.s>h1:hover,.s>h2:hover,.two h2:hover,.s>p:hover,.big:hover{color:var(--g)}
+.pill:hover{scale:1.14!important;rotate:-3deg;background:var(--g)!important;color:#fff!important;transform-origin:center}
+.ar:hover{scale:1.03}.ar{transition:scale .5s var(--sp)}
+.ck li:hover{translate:8px 0;border-color:var(--g)}
+h2::after{transition:transform .6s var(--sp);transform-origin:left}h2:hover::after{transform:scaleX(2.2)}
+.opt:hover{background:#eaf7ed}.opt.ok:hover,.opt.on1:hover{background:inherit}
+header{transition:scale .4s var(--sp)}header:hover{scale:1.06}header b{transition:rotate .6s var(--sp)}header b:hover{rotate:360deg}
+#ct{transition:scale .4s var(--sp),color .3s}#ct:hover{scale:1.25;color:var(--g)}
+.d1,.d2{transition:transform 1.4s var(--ez),filter .5s}.d1:hover,.d2:hover{filter:brightness(1.25)}
+.tm{transition:scale .5s var(--sp)}.tm:hover{scale:1.08}
+.star:hover{color:var(--g);scale:1.3}
+footer{position:fixed;z-index:6;left:0;right:0;bottom:0;padding:10px clamp(14px,4vw,40px) max(12px,env(safe-area-inset-bottom));display:flex;gap:12px;align-items:center;background:linear-gradient(transparent,#fff 45%)}
+#pg{position:fixed;z-index:7;left:0;top:0;height:4px;background:var(--g);width:0;transition:width .8s var(--ez)}
+.nb{width:46px;height:46px;border-radius:50%;background:#000;color:#fff;font-size:20px;transition:transform .4s var(--sp);flex:none}.nb:hover{transform:scale(1.12)}.nb:active{transform:scale(.9)}.nb.n{background:var(--g)}
+#ct{font-weight:600;font-variant-numeric:tabular-nums;margin:0 auto 0 4px}
+.fs header,.fs footer{opacity:0;pointer-events:none}.fs footer{transition:.3s}.fs footer:hover,.fs footer:active{opacity:1;pointer-events:auto}
+#pop{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:16px;background:#0008;backdrop-filter:blur(10px);opacity:0;pointer-events:none;transition:opacity .4s}
+#pop.on{opacity:1;pointer-events:auto}
+#pop .c{width:min(100%,520px);text-align:center;transform:translateY(60px) scale(.9);transition:transform .6s var(--sp);border:0}#pop.on .c{transform:none}
+#pop .pa{font:700 clamp(40px,10vw,64px)/1.6 Amiri,serif;direction:rtl;color:var(--g)}
+@media(max-width:760px){.two{grid-template-columns:1fr}.s{padding-top:60px;justify-content:flex-start}#pop{place-items:end center}.d1{width:200px;height:200px}header span{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<div class="bg"><i class="d1"></i><i class="d2"></i><i class="d3"></i></div>
+<div id="pg"></div>
+<header><b>ف</b><span>Fikih VIII · Pertemuan 1 · Ketentuan Puasa</span></header>
+<main id="deck">
+
+<section class="s"><!-- 0 cover -->
+<p class="a pill" style="align-self:flex-start">Modul Ajar Kurikulum Merdeka · Fase D</p>
+<h1 class="a">Ketentuan<br><span class="g">Puasa</span></h1>
+<p class="a" style="max-width:34ch;font-size:1.25em">Pengertian, dalil, syarat, dan rukun puasa.</p>
+<div class="a row"><button class="btn" data-go="1">Mulai belajar</button><span class="m sm">Pertemuan ke-1 · Kelas VIII · Semester 1</span></div>
+<p class="a sm m">Ahmad Rifqi Puadzi · 23111161<br>MTs Al-Hidayah Bojongnangka · TP 2026/2027</p>
+</section>
+
+<section class="s"><!-- 1 identitas -->
+<h2 class="a">Identitas modul</h2>
+<div class="grid">
+<div class="a c"><p class="m sm">Mata pelajaran</p><h3>Fikih · Kelas VIII / Fase D · Semester 1</h3></div>
+<div class="a c"><p class="m sm">Bab</p><h3>Ketentuan Puasa</h3></div>
+<div class="a c gr"><p class="sm">Model</p><h3>Discovery Learning</h3></div>
+<div class="a c"><p class="m sm">Metode</p><h3>Diskusi kelompok, market place</h3></div>
+<div class="a c"><p class="m sm">Alokasi waktu</p><h3>2 × 40 menit (80 menit)</h3></div>
+<div class="a c bk"><p class="sm m">Media dan sumber</p><h3>LCD, LKPD, buku Fikih MTs VIII (Kemenag), e-book</h3></div>
+</div>
+<div class="a c"><p class="m sm">Capaian pembelajaran</p><p>Peserta didik mampu menganalisis perbedaan puasa wajib dan sunnah, menjelaskan hikmahnya, serta menyajikan hasil analisis dengan sikap jujur, disiplin, tanggung jawab, dan toleran.</p></div>
+</section>
+
+<section class="s"><!-- 2 agenda -->
+<h2 class="a">Alur 80 menit hari ini</h2>
+<div class="grid">
+<div class="a c"><p class="big">10′</p><h3>Pendahuluan</h3><p class="m sm">Salam, doa, apersepsi, pemantik, tujuan</p></div>
+<div class="a c gr"><p class="big" style="color:#fff">60′</p><h3>Kegiatan inti</h3><p class="sm">Stimulasi 10′ · Identifikasi masalah 10′ · Pengumpulan data 15′ · Pengolahan data 15′ · Pembuktian 10′</p></div>
+<div class="a c"><p class="big">10′</p><h3>Penutup</h3><p class="m sm">Kesimpulan, refleksi, evaluasi, tugas</p></div>
+</div>
+</section>
+
+<section class="s"><!-- 3 pembukaan -->
+<h2 class="a">Pendahuluan: kita mulai</h2>
+<p class="a m">Ketuk setiap langkah saat sudah dilakukan.</p>
+<ul class="a ck" style="padding:0">
+<li><i>✓</i>Salam dan berdoa bersama</li>
+<li><i>✓</i>Cek kehadiran, kerapian pakaian, tempat duduk, dan kebersihan kelas</li>
+<li><i>✓</i>Apersepsi: suasana sahur dan berbuka</li>
+<li><i>✓</i>Pertanyaan pemantik, tujuan, dan motivasi profil pelajar</li>
+</ul>
+</section>
+
+<section class="s"><!-- 4 diagnostik -->
+<h2 class="a">Asesmen diagnostik</h2>
+<p class="a m">Jawab jujur dengan Ya atau Tidak. Ini bukan penilaian, hanya untuk mengenal kesiapanmu.</p>
+<div class="grid" id="dg"></div>
+</section>
+
+<section class="s"><!-- 5 apersepsi -->
+<p class="a pill" style="align-self:flex-start">Apersepsi</p>
+<h1 class="a" style="font-size:clamp(30px,6.4vw,80px)">Apa yang kalian ketahui tentang <span class="g">puasa</span>?</h1>
+<p class="a" style="font-size:1.3em">Siapa saja yang wajib berpuasa?</p>
+<p class="a m">Diskusikan sebentar dengan teman sebangku.</p>
+</section>
+
+<section class="s"><!-- 6 pemantik -->
+<h2 class="a">Pertanyaan pemantik</h2>
+<p class="a m">Ketuk kartu untuk melihat petunjuk.</p>
+<div class="grid" id="pm"></div>
+</section>
+
+<section class="s"><!-- 7 tujuan -->
+<h2 class="a">Tujuan pembelajaran</h2>
+<div class="grid">
+<div class="a c gr"><h3>1. Pengertian dan dalil</h3><p class="sm">Menjelaskan arti puasa secara bahasa dan istilah beserta QS. al-Baqarah: 187.</p></div>
+<div class="a c"><h3>2. Syarat</h3><p class="sm m">Mengidentifikasi syarat wajib dan syarat sah puasa.</p></div>
+<div class="a c bk"><h3>3. Rukun dan niat</h3><p class="sm m">Menjelaskan rukun puasa serta waktu berniat puasa wajib dan sunnah.</p></div>
+</div>
+<div class="a"><p class="sm m" style="margin-bottom:6px">Profil yang ingin kita capai</p>
+<span class="pill">Bertakwa dan berakhlak mulia</span><span class="pill">Bernalar kritis</span><span class="pill">Gotong royong</span><span class="pill">Berkebinekaan global</span><br>
+<span class="pill" style="background:#000;color:#fff">Ta’addub</span><span class="pill" style="background:#000;color:#fff">Tawassuth</span><span class="pill" style="background:#000;color:#fff">Tathawwur wa ibtikar</span><span class="pill" style="background:#000;color:#fff">Tasamuh</span></div>
+</section>
+
+<section class="s"><!-- 8 stimulasi -->
+<p class="a pill" style="align-self:flex-start">Stimulasi · amati dan catat kata kunci</p>
+<h2 class="a">Pengertian puasa</h2>
+<div class="grid">
+<div class="a c gr"><p class="sm">Menurut bahasa</p><p class="ar" style="font-size:clamp(34px,6vw,56px);justify-content:flex-end">صِيَام / صَوْم</p><p><b>Shiyam atau shaum</b>, dari kata <i>shaama–yashuumu</i>: menahan atau mencegah.</p></div>
+<div class="a c"><p class="m sm">Menurut istilah</p><p style="font-size:1.1em">Menahan diri dari segala yang membatalkan puasa <b>sejak terbit fajar hingga terbenam matahari</b>, disertai <b>niat</b>, dengan syarat dan rukun tertentu.</p></div>
+</div>
+<div class="a"><span class="pill">fajar</span><span class="pill">terbenam matahari</span><span class="pill">niat</span><span class="pill">syarat</span><span class="pill">rukun</span></div>
+</section>
+
+<section class="s"><!-- 9 al-baqarah 187 -->
+<p class="a pill" style="align-self:flex-start">Dalil · QS. al-Baqarah: 187</p>
+<p class="a m">Ketuk setiap kata Arab untuk melihat arti dan penjelasannya.</p>
+<div class="a ayat"><div class="ar" id="a187"></div></div>
+<div class="a c"><p class="m sm">Artinya</p><p>“… dan makan minumlah hingga terang bagimu benang putih dari benang hitam, yaitu fajar. Kemudian sempurnakanlah puasa itu sampai (datang) malam.”</p></div>
+</section>
+
+<section class="s"><!-- 10 al-baqarah 183 -->
+<p class="a pill" style="align-self:flex-start">Kegiatan · QS. al-Baqarah: 183</p>
+<h2 class="a">Perintah berpuasa</h2>
+<div class="a ayat"><div class="ar" id="a183"></div></div>
+<div class="a c bk"><p class="sm m">Artinya</p><p>“Wahai orang-orang yang beriman! Diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang-orang sebelum kamu agar kamu bertakwa.”</p></div>
+<p class="a m sm">Tujuan akhir puasa: takwa. Itulah mengapa ketentuannya kita pelajari dengan teliti.</p>
+</section>
+
+<section class="s"><!-- 11 identifikasi -->
+<h2 class="a">Identifikasi masalah</h2>
+<p class="a m">Ayo bertanya, dari yang faktual sampai hipotetik. Ketuk kartu untuk melihat arah jawabannya.</p>
+<div class="grid" id="im"></div>
+</section>
+
+<section class="s"><!-- 12 syarat -->
+<h2 class="a">Syarat puasa</h2>
+<div class="grid">
+<div class="a c gr"><h3>Syarat wajib</h3><p class="sm" style="margin-bottom:8px">Yang menyebabkan seseorang dikenai kewajiban puasa.</p>
+<span class="pill" style="background:#fff3">Islam</span><span class="pill" style="background:#fff3;color:#fff">Baligh</span><span class="pill" style="background:#fff3;color:#fff">Berakal sehat</span><span class="pill" style="background:#fff3;color:#fff">Mampu</span><span class="pill" style="background:#fff3;color:#fff">Suci dari haid dan nifas</span><span class="pill" style="background:#fff3;color:#fff">Mukim</span></div>
+<div class="a c"><h3>Syarat sah</h3><p class="sm m" style="margin-bottom:8px">Agar puasa seseorang dinilai sah.</p>
+<span class="pill">Islam</span><span class="pill">Mumayiz</span><span class="pill">Suci dari haid dan nifas</span><span class="pill">Bukan hari yang diharamkan</span></div>
+</div>
+<div class="a c bk"><h3>Hari yang diharamkan berpuasa</h3><p class="sm m">1 Syawal (Idul Fitri) · 10 Dzulhijjah (Idul Adha) · 11–13 Dzulhijjah (hari tasyriq)</p></div>
+</section>
+
+<section class="s"><!-- 13 rukun -->
+<h2 class="a">Rukun puasa</h2>
+<div class="grid">
+<div class="a c gr"><h3>1. Niat</h3><p class="sm">Menyengaja di dalam hati berpuasa karena Allah Swt.</p></div>
+<div class="a c bk"><h3>2. Menahan diri</h3><p class="sm m">Dari semua pembatal, mulai Subuh hingga Magrib.</p></div>
+<div class="a c"><h3>Waktu niat</h3><p class="sm"><b>Wajib</b> (Ramadhan, nadzar, qadha): malam sebelum fajar.<br><b>Sunnah</b>: boleh setelah fajar sampai sebelum tergelincir matahari, selama belum membatalkan.</p></div>
+</div>
+<div class="a ayat"><p class="ar" style="font-size:clamp(22px,4vw,38px)">مَنْ لَمْ يُبَيِّتِ الصِّيَامَ قَبْلَ الْفَجْرِ فَلَا صِيَامَ لَهُ</p><p class="sm m" style="text-align:center">“Barang siapa tidak berniat puasa pada malam hari sebelum fajar, maka tidak ada puasa baginya.” (HR. Abu Dawud, at-Tirmidzi, an-Nasa’i)</p></div>
+<div class="a ayat" style="background:#000;border-color:#000;color:#fff"><p class="ar" style="font-size:clamp(22px,4vw,38px)">نَوَيْتُ صَوْمَ غَدٍ عَنْ أَدَاءِ فَرْضِ شَهْرِ رَمَضَانَ هَذِهِ السَّنَةِ لِلَّهِ تَعَالَى</p><p class="sm" style="text-align:center;color:#ffffffb0">“Aku berniat puasa esok hari untuk menunaikan fardu bulan Ramadhan tahun ini karena Allah Ta’ala.”</p></div>
+</section>
+
+<section class="s"><!-- 14 LKPD -->
+<p class="a pill" style="align-self:flex-start">Pengumpulan data · LKPD 1</p>
+<h2 class="a">Syarat wajib, syarat sah, atau rukun?</h2>
+<div id="lk"></div>
+<p class="a" id="lks" style="font-weight:800">Benar: 0 / 5</p>
+</section>
+
+<section class="s"><!-- 15 market place -->
+<p class="a pill" style="align-self:flex-start">Pengolahan data · market place</p>
+<div class="two">
+<div><h2 class="a">Poster, penjual, dan pembeli</h2>
+<ul class="a" style="padding-left:20px"><li>Enam kelompok menyusun poster ringkas.</li><li>Dua anggota tinggal sebagai penjual dan menjelaskan hasil kelompok.</li><li>Anggota lain berkeliling sebagai pembeli dan mencatat informasi.</li><li>Setelah waktu habis, bertukar peran.</li></ul></div>
+<div class="a"><div class="tm"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="#e4e9e6" stroke-width="7"/><circle id="rg" cx="50" cy="50" r="45" fill="none" stroke="#2fb344" stroke-width="7" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="0" style="transition:stroke-dashoffset 1s linear"/></svg><b id="tt">15:00</b></div>
+<div class="row" style="justify-content:center;margin-top:14px"><button class="btn" id="ts">Mulai</button><button class="btn o" id="tr">Ulang</button></div></div>
+</div>
+</section>
+
+<section class="s"><!-- 16 kesimpulan -->
+<h2 class="a">Pembuktian dan kesimpulan</h2>
+<div class="grid">
+<div class="a c gr"><h3>Pengertian</h3><p class="sm">Menahan diri dari pembatal sejak fajar sampai magrib disertai niat.</p></div>
+<div class="a c"><h3>Syarat</h3><p class="sm m">Wajib: Islam, baligh, berakal, mampu, suci, mukim. Sah: Islam, mumayiz, suci, bukan hari terlarang.</p></div>
+<div class="a c bk"><h3>Rukun</h3><p class="sm m">Niat dan menahan diri dari pembatal.</p></div>
+</div>
+<div class="a c"><h3>Meluruskan miskonsepsi</h3><p class="sm"><b>Anak belum baligh?</b> Puasanya sah jika sudah mumayiz, tetapi belum wajib.<br><b>Berniat setelah fajar?</b> Tidak sah untuk puasa wajib, boleh untuk puasa sunnah sebelum tergelincir matahari.</p></div>
+</section>
+
+<section class="s"><!-- 17 kuis -->
+<p class="a pill" style="align-self:flex-start">Evaluasi singkat</p>
+<div class="a" id="qz"></div>
+</section>
+
+<section class="s"><!-- 18 penutup -->
+<h2 class="a">Penutup dan refleksi</h2>
+<div class="grid">
+<div class="a c"><h3>Refleksi</h3><p class="sm m">Beri bintang untuk usahamu hari ini.</p><div class="row" id="st" style="gap:4px"></div><p class="sm" id="stt" style="min-height:1.6em"></p></div>
+<div class="a c gr"><h3>Tindak lanjut</h3><p class="sm">Hafalkan niat puasa Ramadhan beserta artinya.</p><p class="sm" style="margin-top:8px">Pertemuan berikutnya: sunnah dan hal yang dimakruhkan dalam puasa.</p></div>
+</div>
+<div class="a c bk"><p class="sm">Bersama-sama simpulkan pelajaran hari ini, ajukan tanya jawab, sampaikan pesan semangat, lalu tutup dengan doa dan salam.</p></div>
+</section>
+
+<section class="s"><!-- 19 asesmen -->
+<h2 class="a">Asesmen, diferensiasi, dan tindak lanjut</h2>
+<div class="grid">
+<div class="a c"><h3>Asesmen</h3><p class="sm m">Diagnostik di awal. Formatif: observasi, LKPD, evaluasi singkat. Sumatif: tes tertulis dan kinerja presentasi.</p></div>
+<div class="a c gr"><h3>Rubrik diskusi (maks. 20)</h3><p class="sm">Keaktifan · kerja sama · ketepatan jawaban · presentasi · sikap. Nilai = skor ÷ 20 × 100.</p></div>
+<div class="a c"><h3>Diferensiasi</h3><p class="sm m">Proses: bacaan, video, atau diskusi. Produk: poster, peta konsep, presentasi, atau tulisan. Tutor sebaya untuk yang butuh bantuan.</p></div>
+<div class="a c bk"><h3>Pengayaan dan remedial</h3><p class="sm m">Pengayaan: soal HOTS dan kitab tambahan. Remedial: bahas ulang dengan metode lain, lalu penilaian ulang.</p></div>
+</div>
+</section>
+
+<section class="s" style="text-align:center;align-items:center"><!-- 20 terima kasih -->
+<h1 class="a">Terima <span class="g">kasih</span></h1>
+<p class="a" style="font-size:1.4em">Semoga ilmu hari ini membawa kita lebih bertakwa.</p>
+<p class="a ar" style="font-size:clamp(28px,6vw,52px)">وَالسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</p>
+<button class="a btn" data-go="0">Ulangi dari awal</button>
+</section>
+
+</main>
+
+<div id="pop"><div class="c"><p class="pa"></p><h3 class="pt" style="font-size:1.5em"></h3><p class="pd m" style="margin:8px 0 18px"></p><button class="btn" id="px">Tutup</button></div></div>
+
+<footer>
+<button class="nb" id="pv" aria-label="Sebelumnya">‹</button><span id="ct"></span>
+<button class="nb o" id="fb" aria-label="Layar penuh" style="font-size:17px">⛶</button>
+<button class="nb n" id="nx" aria-label="Berikutnya">›</button>
+</footer>
+
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const A={a187:["وَكُلُوا|dan makanlah|Fi’il amr (perintah) dari kata أكل. Allah membolehkan makan pada malam hari Ramadhan.","وَاشْرَبُوا|dan minumlah|Perintah minum. Izin ini berlaku sampai terbit fajar.","حَتَّىٰ|hingga|Menunjukkan batas waktu: boleh makan minum sampai fajar jelas.","يَتَبَيَّنَ|menjadi jelas|Fajar benar-benar terlihat, bukan sekadar perkiraan.","لَكُمُ|bagimu|Ditujukan kepada orang-orang beriman.","الْخَيْطُ|benang|Kiasan untuk garis cahaya di ufuk.","الْأَبْيَضُ|yang putih|Cahaya putih fajar yang membentang di ufuk timur.","مِنَ|dari|Kata penghubung untuk membedakan dua hal.","الْخَيْطِ|benang|Pembanding bagi benang putih tadi.","الْأَسْوَدِ|yang hitam|Gelapnya malam.","مِنَ|yaitu|Menjelaskan maksud benang tadi.","الْفَجْرِ|fajar|Awal waktu Subuh, titik mulai berpuasa.","ثُمَّ|kemudian|Urutan: setelah fajar jelas, puasa dimulai.","أَتِمُّوا|sempurnakanlah|Perintah menyempurnakan puasa tanpa putus sampai waktunya.","الصِّيَامَ|puasa|Menahan diri dari pembatal disertai niat.","إِلَى|sampai|Batas akhir puasa.","اللَّيْلِ|malam|Masuknya malam, yaitu terbenam matahari (Magrib)."],
+a183:["يَا أَيُّهَا|wahai|Seruan untuk menarik perhatian.","الَّذِينَ|orang-orang yang|Kata sambung untuk orang banyak.","آمَنُوا|beriman|Seruan khusus bagi orang beriman: yang taat menerima perintah ini.","كُتِبَ|diwajibkan|Secara bahasa ‘ditulis’; dalam syariat bermakna ditetapkan sebagai kewajiban.","عَلَيْكُمُ|atas kamu|Kewajiban ditujukan kepada kita semua.","الصِّيَامُ|puasa|Ibadah menahan diri dari fajar sampai magrib.","كَمَا|sebagaimana|Puasa juga diwajibkan atas umat terdahulu.","كُتِبَ|diwajibkan|Pengulangan untuk menyamakan.","عَلَى|atas|Huruf jar.","الَّذِينَ|orang-orang yang|Kata sambung.","مِنْ|dari|Menunjukkan waktu sebelum kita.","قَبْلِكُمْ|sebelum kamu|Para umat sebelum Nabi Muhammad Saw.","لَعَلَّكُمْ|agar kamu|Menunjukkan tujuan atau harapan.","تَتَّقُونَ|bertakwa|Hikmah utama puasa: menjaga diri dari maksiat dan taat kepada Allah."]};
+const pop=$('#pop');
+function openPop(a,t,d){$('.pa',pop).textContent=a;$('.pt',pop).textContent=t;$('.pd',pop).textContent=d;pop.classList.add('on')}
+const closePop=()=>pop.classList.remove('on');$('#px').onclick=closePop;pop.onclick=e=>{if(e.target===pop)closePop()};
+for(const k in A){A[k].forEach(r=>{const[a,t,d]=r.split('|'),b=document.createElement('button');b.className='w a';b.textContent=a;b.onclick=()=>openPop(a,t,d);$('#'+k).appendChild(b)})}
+
+$$('.ck li').forEach(l=>l.onclick=()=>l.classList.toggle('d'));
+['Pernah puasa Ramadhan satu bulan penuh?','Sudah hafal niat puasa Ramadhan?','Tahu hal-hal yang membatalkan puasa?','Siap belajar dengan diskusi dan presentasi?'].forEach(q=>{const d=document.createElement('div');d.className='a c';d.innerHTML=`<p style="margin-bottom:8px">${q}</p><button class="opt">Ya</button><button class="opt">Tidak</button>`;$$('.opt',d).forEach(b=>b.onclick=()=>{$$('.opt',d).forEach(x=>x.classList.remove('on1'));b.classList.add('on1')});$('#dg').appendChild(d)});
+function flips(id,arr){arr.forEach(([q,h],i)=>{const d=document.createElement('button');d.className='a c'+(i%3==0?' gr':i%3==1?'':' bk');d.style.textAlign='left';d.innerHTML=`<h3>${q}</h3><p class="fb sm">${h}</p>`;d.onclick=()=>$('.fb',d).classList.toggle('sh');$('#'+id).appendChild(d)})}
+flips('pm',[['Mengapa orang sakit parah atau musafir diberi keringanan tidak berpuasa?','Lihat syarat wajib: mampu dan mukim.'],['Apa yang terjadi pada puasa jika seseorang makan karena lupa?','Dibahas di pertemuan ke-3: pembatal puasa.'],['Mengapa Rasulullah menganjurkan menyegerakan berbuka dan mengakhirkan sahur?','Dibahas di pertemuan ke-2: sunnah puasa.'],['Bagaimana puasa di wilayah kutub yang siangnya sangat panjang?','Dibahas di pertemuan ke-4.']]);
+flips('im',[['Apakah anak yang belum baligh sah puasanya?','Cari: syarat sah dan syarat wajib. Kunci: mumayiz.'],['Bagaimana jika berniat setelah terbit fajar?','Cari: waktu niat puasa wajib dan sunnah.'],['Apa bedanya syarat wajib dan syarat sah?','Wajib: kapan seseorang dibebani. Sah: kapan puasanya diterima.']]);
+
+const L=[['Dina (8 tahun) berpuasa penuh sehari',[1],'Mumayiz adalah syarat sah. Puasanya sah, tetapi belum wajib karena belum baligh.'],['Pak Budi sedang menempuh perjalanan jauh (musafir)',[0],'Mukim termasuk syarat wajib. Musafir mendapat keringanan dan mengqadha.'],['Ani berniat puasa Ramadhan pukul 03.30 dini hari',[2],'Niat adalah rukun dan harus dilakukan sebelum fajar.'],['Rina haid pada siang hari bulan Ramadhan',[0,1],'Suci dari haid adalah syarat wajib sekaligus syarat sah.'],['Seseorang menahan makan dan minum sejak fajar sampai magrib',[2],'Menahan diri dari pembatal adalah rukun kedua.']];
+let lkOk=0,lkDone=0;
+L.forEach(([q,ans,why],i)=>{const d=document.createElement('div');d.className='a c';d.style.marginBottom='10px';d.innerHTML=`<p><b>${q}</b></p><div>${['Syarat wajib','Syarat sah','Rukun','Bukan ketiganya'].map((o,j)=>`<button class="opt" data-j="${j}">${o}</button>`).join('')}</div><p class="fb">${why}</p>`;
+$$('.opt',d).forEach(b=>b.onclick=()=>{if(d.dataset.x)return;d.dataset.x=1;const ok=ans.includes(+b.dataset.j);b.classList.add(ok?'ok':'no');if(!ok)ans.forEach(j=>$$('.opt',d)[j].classList.add('ok'));$('.fb',d).classList.add('sh');lkDone++;if(ok)lkOk++;$('#lks').innerHTML=`Benar: <span class="g">${lkOk}</span> / 5`+(lkDone==5?' · Selesai!':'')});$('#lk').appendChild(d)});
+
+let T=900,iv=null;const fmt=()=>{$('#tt').textContent=String(T/60|0).padStart(2,'0')+':'+String(T%60).padStart(2,'0');$('#rg').style.strokeDashoffset=283*(1-T/900)};
+$('#ts').onclick=()=>{if(iv){clearInterval(iv);iv=null;$('#ts').textContent='Lanjut';return}$('#ts').textContent='Jeda';iv=setInterval(()=>{T--;fmt();if(T<=0){clearInterval(iv);iv=null;$('#ts').textContent='Selesai';navigator.vibrate&&navigator.vibrate(300)}},1000)};
+$('#tr').onclick=()=>{clearInterval(iv);iv=null;T=900;fmt();$('#ts').textContent='Mulai'};
+
+const Q=[['Menahan diri dari makan, minum, dan hal yang membatalkan puasa sejak fajar sampai terbenam matahari disebut ....',['Shaum','Sahur','Iftar','Imsak'],0,'Shaum atau shiyam berarti menahan diri.'],['Yang termasuk syarat sah puasa adalah ....',['Mampu','Mukim','Mumayiz','Baligh'],2,'Mumayiz adalah syarat sah; mampu, mukim, dan baligh adalah syarat wajib.'],['Niat puasa Ramadhan harus dilakukan ....',['Setelah fajar','Sebelum tergelincir matahari','Pada malam sebelum fajar','Saat berbuka'],2,'Puasa wajib harus diniatkan sebelum fajar.'],['Dua rukun puasa adalah ....',['Sahur dan berbuka','Niat dan menahan diri dari pembatal','Islam dan baligh','Mukim dan mampu'],1,'Rukun: niat dan menahan diri dari pembatal.'],['Puasa sunnah boleh diniatkan ....',['Setelah fajar sebelum tergelincir matahari, jika belum membatalkan','Setelah Magrib','Tidak perlu niat','Hanya pada malam hari'],0,'Keringanan niat ini khusus puasa sunnah.']];
+let qi=0,qs=0;const qz=$('#qz');
+function rq(){if(qi>=Q.length){const p=qs/Q.length*100;qz.innerHTML=`<div class="c bk" style="text-align:center"><p class="sm m">Skor kamu</p><p class="big" id="sc">0</p><p style="margin:10px 0 16px">${p>=80?'Luar biasa! Pemahamanmu sudah kuat.':p>=60?'Bagus! Ulangi bagian yang masih ragu.':'Ayo pelajari lagi syarat dan rukunnya.'}</p><button class="btn" id="rt">Ulangi kuis</button></div>`;let n=0;const t=setInterval(()=>{n+=Math.ceil(p/20);if(n>=p){n=p;clearInterval(t)}$('#sc').textContent=Math.round(n)},40);$('#rt').onclick=()=>{qi=qs=0;rq()};return}
+const[q,o,a,e]=Q[qi];qz.innerHTML=`<div class="c"><p class="m sm">Soal ${qi+1} dari ${Q.length}</p><h3 style="margin:6px 0 12px;font-size:1.25em">${q}</h3>${o.map((x,i)=>`<button class="opt" style="display:block;width:100%;text-align:left;border-radius:16px;margin:0 0 8px;padding:12px 16px" data-i="${i}">${x}</button>`).join('')}<p class="fb" id="qe"></p><button class="btn k" id="qn" style="display:none;margin-top:10px">${qi==Q.length-1?'Lihat skor':'Lanjut'}</button></div>`;
+$$('.opt',qz).forEach(b=>b.onclick=()=>{if(qz.dataset.l==qi)return;qz.dataset.l=qi;const ok=+b.dataset.i==a;b.classList.add(ok?'ok':'no');if(ok)qs++;else $$('.opt',qz)[a].classList.add('ok');$('#qe').textContent=(ok?'Benar. ':'Belum tepat. ')+e;$('#qe').classList.add('sh');$('#qn').style.display='inline-flex'});
+$('#qn').onclick=()=>{qi++;rq()}}
+rq();
+
+const msg=['Tidak apa-apa, kita coba lagi.','Terus berusaha.','Cukup baik.','Bagus sekali.','Luar biasa, pertahankan!'];
+for(let i=1;i<=5;i++){const b=document.createElement('button');b.className='star';b.textContent='★';b.onclick=()=>{$$('.star').forEach((s,j)=>s.classList.toggle('on1',j<i));$('#stt').textContent=msg[i-1]};$('#st').appendChild(b)}
+
+const S=$$('.s');let c=0;
+S.forEach(s=>$$('.a',s).forEach((e,i)=>e.style.setProperty('--i',i)));
+function go(n){n=Math.max(0,Math.min(S.length-1,n));if(n==c&&S[c].classList.contains('on'))return;const o=S[c];o.classList.add('out');setTimeout(()=>o.classList.remove('out'),900);
+c=n;S.forEach((s,i)=>{s.classList.toggle('on',i==c);s.classList.toggle('p',i<c)});S[c].scrollTop=0;
+document.documentElement.style.setProperty('--r',c*22+'deg');$('#pg').style.width=(c+1)/S.length*100+'%';$('#ct').textContent=(c+1)+' / '+S.length;history.replaceState(null,'','#'+(c+1))}
+$('#nx').onclick=()=>go(c+1);$('#pv').onclick=()=>go(c-1);$$('[data-go]').forEach(b=>b.onclick=()=>go(+b.dataset.go));
+addEventListener('keydown',e=>{if(e.key=='Escape')return closePop();if(pop.classList.contains('on'))return;if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(c+1)}if(['ArrowLeft','PageUp'].includes(e.key))go(c-1);if(e.key=='f'||e.key=='F')fsT()});
+let tx=0,ty=0;addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',e=>{if(pop.classList.contains('on'))return;const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)go(c+(dx<0?1:-1))},{passive:true});
+function fsT(){const d=document,el=d.documentElement;if(d.fullscreenElement||d.webkitFullscreenElement){(d.exitFullscreen||d.webkitExitFullscreen).call(d)}else if(el.requestFullscreen||el.webkitRequestFullscreen){(el.requestFullscreen||el.webkitRequestFullscreen).call(el).catch(()=>d.body.classList.toggle('fs'))}else d.body.classList.toggle('fs')}
+$('#fb').onclick=fsT;
+go(Math.max(0,(parseInt(location.hash.slice(1))||1)-1));S[c].classList.add('on');
+</script>
+</body>
+</html>
